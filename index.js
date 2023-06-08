@@ -13,19 +13,19 @@ spanEl.textContent = "Enter a number"
 convertBtn.addEventListener("click", function () {
   if (check) {
     //lenght
-    let valueOfFeets = (numberEl.value * 3.2808).toFixed(3)
-    let valueOfMeters = (numberEl.value * 0.3048).toFixed(3)
-    const lenght = ` <h4> ${numberEl.value} meters = ${valueOfFeets} feet | ${numberEl.value} feet = ${valueOfMeters} meters</h4> `
+    let valueOfMeters = (numberEl.value * 3.2808).toFixed(3)
+    let valueOfFeets = (numberEl.value * 0.3048).toFixed(3)
+    const lenght = ` <h4> ${numberEl.value} meters = ${valueOfMeters} feet | ${numberEl.value} feet = ${valueOfFeets} meters</h4> `
     lengthEl.innerHTML += lenght
     //volume
     let valueOfLiters = (numberEl.value * 0.2642).toFixed(3)
     let valueOfGallons = (numberEl.value * 3.7854).toFixed(3)
-    const volume = ` <h4> ${numberEl.value} meters = ${valueOfLiters} feet | ${numberEl.value} feet = ${valueOfGallons} meters</h4> `
+    const volume = ` <h4> ${numberEl.value} Liters = ${valueOfLiters} Gallons | ${numberEl.value} Gallons = ${valueOfGallons} Liters</h4> `
     volumeEl.innerHTML += volume
     //mass
     let valueOfKilograms = (numberEl.value * 2.2046).toFixed(3)
     let valueOfPounds = (numberEl.value * 0.4536).toFixed(3)
-    const mass = ` <h4> ${numberEl.value} meters = ${valueOfKilograms} feet | ${numberEl.value} feet = ${valueOfPounds} meters</h4> `
+    const mass = ` <h4> ${numberEl.value} Kilograms = ${valueOfKilograms} Pounds | ${numberEl.value} Pounds = ${valueOfPounds} Kilograms</h4> `
     massEl.innerHTML += mass
     check = false
     spanEl.textContent = "Please, Double Click Reset Button"
