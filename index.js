@@ -11,7 +11,7 @@ let check = true
 spanEl.textContent = "Enter a number"
 
 convertBtn.addEventListener("click", function () {
-  if (check && typeof numberEl.value === 'number') {
+  if (check) {
     //lenght
     let valueOfFeets = (numberEl.value * 3.2808).toFixed(3)
     let valueOfMeters = (numberEl.value * 0.3048).toFixed(3)
@@ -28,10 +28,6 @@ convertBtn.addEventListener("click", function () {
     const mass = ` <h4> ${numberEl.value} meters = ${valueOfKilograms} feet | ${numberEl.value} feet = ${valueOfPounds} meters</h4> `
     massEl.innerHTML += mass
     check = false
-    spanEl.textContent = "Please, Double Click Reset Button"
-  } else if (check) {
-    spanEl.textContent = "Cannot accept strings or symbols, please try again."
-  } else {
     spanEl.textContent = "Please, Double Click Reset Button"
   }
 })
