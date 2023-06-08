@@ -29,8 +29,10 @@ convertBtn.addEventListener("click", function () {
     massEl.innerHTML += mass
     check = false
     spanEl.textContent = "Please, Double Click Reset Button"
-  } else {
+  } else if (check) {
     spanEl.textContent = "Cannot accept strings or symbols, please try again."
+  } else {
+    spanEl.textContent = "Please, Double Click Reset Button"
   }
 })
 
